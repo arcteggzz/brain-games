@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import CircleLoader from "react-spinners/CircleLoader";
-import "./SplashPage.scss";
+import styles from "./SplashPage.module.scss";
 
 interface Props {}
 
@@ -17,7 +17,7 @@ function SplashPage(props: Props) {
 
   return (
     <>
-      <div className="splash">
+      <div className={styles.splash}>
         <CircleLoader size={100} color="#ffffff" />
       </div>
     </>
