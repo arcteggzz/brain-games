@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   h1 {
     font-size: pix-rem(20);
@@ -34,26 +35,11 @@
       transition: scale 0.15s ease-in-out;
 
       .imgContainer {
-        // padding: pix-rem(40);
-        // border: 4px
-        //   linear-gradient(
-        //     180deg,
-        //     rgba(204, 43, 94, 1) 0%,
-        //     rgba(117, 58, 136, 1) 100%
-        //   )
-        //   solid;
-        // border-radius: 50%;
-
         background: white;
         border-radius: 50%;
         width: pix-rem(120);
         height: pix-rem(120);
         padding: 4px;
-
-        // position: relative;
-        // background: linear-gradient(to right, red, purple);
-        // padding: 10px;
-        // border-radius: 50%;
 
         img {
           border-radius: 50%;
@@ -104,5 +90,11 @@
     border-radius: 128px;
     text-decoration: none;
     margin: pix-rem(32) 0 0 0;
+  }
+
+  .footerContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }

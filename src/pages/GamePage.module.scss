@@ -1,0 +1,55 @@
+@import "../assets/utilities/functions";
+@import "../assets/utilities/variables";
+
+.GamePage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: scale 0.15s ease-in-out;
+
+      .imgContainer {
+        background: white;
+        border-radius: 50%;
+        width: pix-rem(120);
+        height: pix-rem(120);
+        padding: 4px;
+
+        img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      .imgContainer:hover {
+        border: 4px red solid;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .icon:hover {
+      scale: 1.05;
+    }
+  }
+
+  .footerContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
